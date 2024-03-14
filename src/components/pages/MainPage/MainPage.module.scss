@@ -1,0 +1,116 @@
+.MainPageContainer {
+    width: 370px;
+    border-radius: 15px;
+    background: transparent;
+    border: 3px solid #ff64d6aa;
+    backdrop-filter: blur(15px);
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.InputForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.HeaderRow {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ProductListContainer {
+    width: 325px;
+    max-height: 400px; /* Максимальная высота, после которой появится прокрутка */
+    overflow-y: auto; /* скролл появляется по вертикали, когда это необходимо */
+}
+
+.ProductListContainer::-webkit-scrollbar {
+    display: none; /* скрываем ползунок */
+}
+
+.ProductRow {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: #323232;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.ProductName,
+.ProductPrice,
+.ProductCost {
+    margin-left: 10px;
+    flex: 1;
+    text-align: left;
+}
+
+.PrName {
+    cursor: pointer;
+}
+
+
+.PrName:hover {
+    text-decoration: underline;
+}
+
+.DeleteButton,
+.AddButton,
+.CancelButton,
+.EditButton
+ {
+    background: #ff64d6aa;
+    
+    // More styling for the delete button
+}
+
+input {
+    color: white;
+    margin: 10px;
+    outline: none;
+}
+button {
+    margin: 10px;
+    color: white;
+    background: #ff64d6aa;
+    transition: 0.2s;
+    border: none;
+    outline: none;
+}
+button:hover {
+    background: #ff64d6ff;
+    transition: 0.2s;
+}
+input {
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    border-bottom: 3px solid white;
+    border-radius: 0px;
+    transition: 0.2s;
+}
+input:hover {
+    border-color: #ff64d6aa;
+    transition: 0.2s;
+}
+input:focus {
+    border-color: #ff64d6ff;
+    transition: 0.2s;
+}
+input::placeholder {
+    color: white;
+}
+
+ul, li, ol {
+    margin: 0;
+    padding: 0;
+}
